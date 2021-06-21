@@ -1,0 +1,36 @@
+.dragPay {
+  position: absolute;
+  z-index: 99999;
+  left: 462px;
+  bottom: 56px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 5px solid #2f54eb;
+  padding: 5px;
+  cursor: pointer;
+  .crouseBtn {
+    font-size: 12px;
+  }
+  .mask {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%, -130%);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: toShake 2s infinite;
+    img {
+      width: 150px;
+    }
+  }
+
+  @keyframes toShake {
+    50% {
+      transform: translate(-50%, -140%);
+    }
+    100% {
+      transform: translate(-50%, -130%);
+    }
+  }
+}
