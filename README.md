@@ -69,6 +69,15 @@ or
 cnpm install
 ```
 
+3. 构建前端包
+```sh
+cd ./renderer
+# 安装前端包
+yarn
+# 构建前端包
+yarn build
+```
+
 ## Usage
 
 本地启动应用 | Launch the app locally
